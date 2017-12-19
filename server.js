@@ -1,4 +1,4 @@
-require('sqreen');
+// require('sqreen');
 //  OpenShift sample Node application
 var express = require('express'),
     app     = express(),

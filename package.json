@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-ex",
+  "name": "nodejs-ex2",
   "version": "0.0.1",
   "description": "Node.js sample app for OpenShift 3",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
+    "express": "^4.16.2",
     "mocha": "^2.4.5",
     "mongodb": "^2.1.16",
     "morgan": "^1.7.0",
@@ -20,7 +20,8 @@
     "npm": "*"
   },
   "scripts": {
-    "start": "node-contrast server.js",
+    "contrast": "node-contrast server.js",
+    "start": "node server.js",
     "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
   },
   "repository": {
