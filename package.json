@@ -11,6 +11,7 @@
     "mocha": "^2.4.5",
     "mongodb": "^2.1.16",
     "morgan": "^1.7.0",
+    "node_contrast": "file:node-contrast-1.8.10.tar",
     "object-assign": "4.1.0",
     "sqreen": "^1.11.0"
   },
@@ -19,7 +20,7 @@
     "npm": "*"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node-contrast server.js",
     "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
   },
   "repository": {
