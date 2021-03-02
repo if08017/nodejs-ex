@@ -13,7 +13,8 @@
     "morgan": "^1.7.0",
     "node_contrast": "file:node-contrast-1.8.10.tar",
     "object-assign": "4.1.0",
-    "sqreen": "^1.11.0"
+    "sqreen": "^1.11.0",
+    "snyk": "^1.316.1"
   },
   "engine": {
     "node": "*",
@@ -22,7 +23,9 @@
   "scripts": {
     "contrast": "node-contrast server.js",
     "start": "node server.js",
-    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -33,5 +36,6 @@
   "bugs": {
     "url": "http://github.com/openshift/nodejs-ex/issues"
   },
-  "homepage": "http://github.com/openshift/nodejs-ex"
+  "homepage": "http://github.com/openshift/nodejs-ex",
+  "snyk": true
 }
